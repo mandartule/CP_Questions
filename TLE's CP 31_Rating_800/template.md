@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class A_Ambitious_Kid {
+public class A_Doremy_s_Paint_3 {
 
  static class FastReader{
         BufferedReader br;
@@ -66,23 +66,14 @@ public class A_Ambitious_Kid {
             FastReader in=new FastReader();
             FastWriter out = new FastWriter();
 
-            int n=in.nextInt();
+            int testCases=in.nextInt();
             
-            
+            while(testCases-- > 0){
 
                 //Your code goes here .....
+                int n = in.nextInt();
                 
-
-                int min = Integer.MAX_VALUE;
-
-                for(int i = 0; i<n; i++){
-                    int curr = in.nextInt();
-
-                    min = Math.min(min, Math.abs(curr));
-                }
-                
-                out.println(min);
-            
+            }
             out.close();
         } catch (Exception e) {
             return;
