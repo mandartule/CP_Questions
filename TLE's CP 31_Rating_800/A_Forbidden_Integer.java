@@ -79,11 +79,14 @@ public class A_Forbidden_Integer {
                 int x = in.nextInt();
 
                 if (x != 1) {
+
                     out.println("YES");
+
                     out.println(n);
                     for (int i = 0; i < n; i++) {
                         out.print(1 + " ");
                     }
+                    
                     out.println("");
                 } else if (k == 1 || (k == 2 && n % 2 == 1)) {
                     out.println("NO");
@@ -104,6 +107,7 @@ public class A_Forbidden_Integer {
                 }
             }
             out.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
