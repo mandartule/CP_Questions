@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class B_Blank_Space {
 
  static class FastReader{
         BufferedReader br;
@@ -72,6 +72,23 @@ class Sol {
 
                 //Your code goes here .....
                 int n = in.nextInt();
+                int cnt = 0;
+                int max = 0;
+                for(int i = 0; i<n; i++){
+
+                    int j = in.nextInt();
+                    if(j == 0) cnt++;
+                    else cnt = 0;
+                    max = Math.max(cnt,max);
+
+                    
+                }
+                out.println(max);
+                
+
+                
+
+                
                 
             }
             out.close();

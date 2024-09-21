@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Everybody_Likes_Good_Arrays {
 
  static class FastReader{
         BufferedReader br;
@@ -70,8 +70,31 @@ class Sol {
             
             while(testCases-- > 0){
 
-                //Your code goes here .....
-                int n = in.nextInt();
+                int n=in.nextInt();
+                int arr[] = new int[n];
+
+               
+
+                for(int i = 0; i<n; i++){
+                    arr[i] = in.nextInt(); 
+                } 
+
+                int curr = 0;
+                int ans = 0;
+
+                for(int i = 1; i<n; i++){
+                    if(arr[i]%2 == arr[i-1]%2) curr++;
+                    else{
+                        ans += curr;
+                        curr = 0;
+                    }
+                }
+
+                ans += curr;
+                
+                
+                out.println(ans);
+                        
                 
             }
             out.close();
@@ -79,4 +102,6 @@ class Sol {
             return;
         }
     }
+
+    
 }

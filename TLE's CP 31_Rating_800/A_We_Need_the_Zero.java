@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_We_Need_the_Zero {
 
  static class FastReader{
         BufferedReader br;
@@ -72,6 +72,25 @@ class Sol {
 
                 //Your code goes here .....
                 int n = in.nextInt();
+               
+                int ans = in.nextInt();
+
+                for(int i = 1; i<n; i++){
+
+                    int j = in.nextInt();
+                    ans^=j;
+
+                }
+                
+
+                if(n%2 == 1)out.println(ans);
+                else if(ans == 0) out.println(0); //here the xor does not depend on x
+                else out.println(-1);
+                
+
+                
+
+                
                 
             }
             out.close();

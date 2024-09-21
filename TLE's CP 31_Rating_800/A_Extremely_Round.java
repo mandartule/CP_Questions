@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Extremely_Round {
 
  static class FastReader{
         BufferedReader br;
@@ -70,8 +70,23 @@ class Sol {
             
             while(testCases-- > 0){
 
-                //Your code goes here .....
                 int n = in.nextInt();
+                
+                if(n<= 9) out.println(n);
+                else{
+                    
+                    int prev = 0;
+                    int plus = -1;
+                    while(n>0){
+                        prev = n%10;
+                        n /= 10;
+                        plus++;
+                    }
+
+
+                    out.println(prev+(plus*9));
+                }
+                        
                 
             }
             out.close();
@@ -79,4 +94,6 @@ class Sol {
             return;
         }
     }
+
+    
 }

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Grasshopper_on_a_Line {
 
  static class FastReader{
         BufferedReader br;
@@ -71,7 +71,24 @@ class Sol {
             while(testCases-- > 0){
 
                 //Your code goes here .....
-                int n = in.nextInt();
+                int dest = in.nextInt();
+                int k = in.nextInt();
+
+                if(dest<k){
+                     out.println(1);
+                     out.println(dest);
+                }
+                else if(dest%k == 0){
+                    out.println(2);
+                    out.println(dest-1+" 1");
+                }
+                else{
+                     out.println(1);
+                     out.println(dest);
+                }
+                
+                
+
                 
             }
             out.close();

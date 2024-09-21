@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Serval_and_Mocha_s_Array {
 
  static class FastReader{
         BufferedReader br;
@@ -71,12 +71,45 @@ class Sol {
             while(testCases-- > 0){
 
                 //Your code goes here .....
-                int n = in.nextInt();
+            int n=in.nextInt();
+            int[] arr=new int[n];
+            for(int i=0; i<n; i++){
+                arr[i]=in.nextInt();
+            }
+            boolean flag=false;
+            for(int i=0 ; i<n; i++){
+                for( int j=i+1; j<n; j++){
+
+                    if(gcd(arr[i],arr[j])<=2){
+                        flag=true;
+                        break;
+                    }
+                }
+                if(flag){
+                    break;
+                }
+                
+            }
+            if(flag){
+               out.println("Yes");
+            }else{
+               out.println("No");
+            }
+
+                
                 
             }
             out.close();
         } catch (Exception e) {
             return;
         }
+    }
+
+    public static int gcd(int a,int b){
+        // euclidean algorithm
+ 
+        if (b == 0)
+        return a;
+      return gcd(b, a % b); 
     }
 }

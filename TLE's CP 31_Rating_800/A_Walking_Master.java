@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Walking_Master {
 
  static class FastReader{
         BufferedReader br;
@@ -71,7 +71,16 @@ class Sol {
             while(testCases-- > 0){
 
                 //Your code goes here .....
-                int n = in.nextInt();
+                int a = in.nextInt();
+                int b = in.nextInt();
+                int c = in.nextInt();
+                int d = in.nextInt();
+
+                if(d<b || (c-a)+b > d) out.println(-1);
+                //else if(a == c && b == d) out.println(0);
+                //else if(d == b) out.println(Math.abs(a-b));
+                else out.println(2*(d-b)+(a-c));
+    
                 
             }
             out.close();

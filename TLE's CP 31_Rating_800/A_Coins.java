@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Coins {
 
  static class FastReader{
         BufferedReader br;
@@ -71,7 +71,19 @@ class Sol {
             while(testCases-- > 0){
 
                 //Your code goes here .....
-                int n = in.nextInt();
+                long n = in.nextLong();
+                long k = in.nextLong();
+
+                if(n%2 == 0 || n%k == 0) out.println("YES");
+                else if((n-2)%k == 0) out.println("YES");
+                else if((n-k)%2 == 0) out.println("YES");
+                else out.println("NO");
+                
+            
+
+                
+
+                
                 
             }
             out.close();

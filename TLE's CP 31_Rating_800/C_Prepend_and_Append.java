@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class C_Prepend_and_Append {
 
  static class FastReader{
         BufferedReader br;
@@ -72,6 +72,17 @@ class Sol {
 
                 //Your code goes here .....
                 int n = in.nextInt();
+                String temp = in.nextLine();
+
+                int i = 0, j = n-1;
+                while(i<j){
+                    if(temp.charAt(i) == '0' && temp.charAt(j) == '1'){ i++; j--;}
+                    else if(temp.charAt(i) == '1' && temp.charAt(j) == '0') { i++; j--;}
+                    else break;
+                }
+
+                out.println(j-i+1);
+                
                 
             }
             out.close();

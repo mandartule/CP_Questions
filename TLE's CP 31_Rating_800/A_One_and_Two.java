@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_One_and_Two {
 
  static class FastReader{
         BufferedReader br;
@@ -70,8 +70,33 @@ class Sol {
             
             while(testCases-- > 0){
 
-                //Your code goes here .....
-                int n = in.nextInt();
+                int n=in.nextInt();
+                int arr[] = new int[n];
+                
+                for(int i = 0; i<n; i++) arr[i] = in.nextInt();
+
+                int rCnt = 0;
+                int lCnt = 0;
+
+                int ans = -1;
+
+                for(int  i : arr) if(i == 2) rCnt++;
+                if(rCnt == 0) ans = 1;
+
+               //out.println(lCnt+" "+rCnt);
+                for(int i = 0; i<n; i++){
+                    if(arr[i] == 2) {
+                        lCnt++;
+                        rCnt--;
+                        //out.println(lCnt+" "+rCnt+"");
+                        if(lCnt == rCnt) {
+                            ans = i+1;
+                            break;
+                        }
+                    }
+                }
+
+                out.println(ans);   
                 
             }
             out.close();
@@ -79,4 +104,6 @@ class Sol {
             return;
         }
     }
+
+    
 }

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Twin_Permutations {
 
  static class FastReader{
         BufferedReader br;
@@ -72,6 +72,18 @@ class Sol {
 
                 //Your code goes here .....
                 int n = in.nextInt();
+                for(int i = 0; i<n; i++){
+
+                    int j = in.nextInt();
+
+                    out.print(n-j+1+" ");
+                }
+                out.println("");
+                
+
+                
+
+                
                 
             }
             out.close();

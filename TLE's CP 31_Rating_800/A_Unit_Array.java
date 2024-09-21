@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-class Sol {
+public class A_Unit_Array {
 
  static class FastReader{
         BufferedReader br;
@@ -72,6 +72,30 @@ class Sol {
 
                 //Your code goes here .....
                 int n = in.nextInt();
+
+                int ans = 0;
+                int cnt = 0;
+                int sum = 0;
+                
+                for(int i = 0; i<n; i++){
+
+                    int curr = in.nextInt();
+
+                    sum+= curr;
+                    if(curr<0) cnt++;
+                }
+
+                if(cnt%2 == 0 && sum >=0) out.println(0);
+                else if(cnt%2 == 1 && sum >= 0) out.println(1);
+                else {
+
+                    ans = (((sum*-1)+1)/2);
+
+                    if(ans%2 == cnt%2) out.println(ans);
+                    else out.println(ans+1);
+                } 
+
+                //out.println("-> "+cnt+" "+sum+"   "+ans+" ");
                 
             }
             out.close();
