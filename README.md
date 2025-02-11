@@ -21,22 +21,22 @@ This repo serves as a **well-structured collection of Java solutions** for TLE C
 
 ## 📂 Folder Structure
 
-```
-📦 TLE_CP_31_Java_Solutions
- ┣ 📂 800
- ┣ 📂 900
- ┣ 📂 1000
- ┣ 📂 1100
- ┣ 📂 1200
- ┣ 📂 1300
- ┣ 📂 1400
- ┣ 📂 1500
- ┣ 📂 1600
- ┣ 📂 1700
- ┣ 📂 1800
- ┣ 📂 1900
+
+📦 TLE_CP_31_Java_Solutions<br>
+ ┣ 📂 [800](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_800)<br>
+ ┣ 📂 [900](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_900)<br>
+ ┣ 📂 [1000](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1000)<br>
+ ┣ 📂 [1100](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1100)<br>
+ ┣ 📂 [1200](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1200)<br>
+ ┣ 📂 [1300](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1300)<br>
+ ┣ 📂 [1400](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1400)<br>
+ ┣ 📂 [1500](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1500)<br>
+ ┣ 📂 [1600](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1600)<br>
+ ┣ 📂 [1700](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1700)<br>
+ ┣ 📂 [1800](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1800)<br>
+ ┣ 📂 [1900](https://github.com/mandartule/TLE-s_CP_31/tree/main/TLE's%20CP%2031_Rating_1900)<br>
  ┗ 📜 README.md
-```
+
 Each folder contains Java solutions for problems of that specific difficulty range. 
 
 ---
