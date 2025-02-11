@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class A_Forked {
+public class A_Forked {
 
     static class FastReader {
         BufferedReader br;
@@ -100,7 +100,8 @@ class A_Forked {
                         ans++;
                     }
                 }
-
+                // out.print(kingAttacks);
+                // out.println(queenAttacks);
                 out.println(ans);
             }
             out.close();
